@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+}
+
+.card {
+  background-color: #1f1f1f;
+  max-width: 38.4rem;
+  padding: 4rem;
+  margin: 5rem auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  border-radius: 1.2rem;
+}
+
+.profile-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  margin-top: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.location {
+  color: #c4f82a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+  line-height: 150%;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  max-width: 38rem;
+}
+
+.social-links a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  background-color: #333333;
+  gap: 1.6rem;
+  border-radius: 0.8rem;
+}
+
+.social-links a:hover {
+  background-color: #c4f82a;
+  color: #333333;
+  font-weight: 700;
+}
