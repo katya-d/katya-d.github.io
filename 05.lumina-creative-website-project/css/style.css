@@ -167,7 +167,7 @@ img {
 }
 
 .footer .footer-flex {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items: center;
 }
@@ -276,6 +276,10 @@ img {
   }
 
   .footer .footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 }
