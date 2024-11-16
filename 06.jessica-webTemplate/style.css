@@ -120,6 +120,42 @@ nav .social-profiles ul {
   line-height: 140%;
 }
 
+/* SKILLS SECTION STYLES */
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.skill-col {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+
+.skill-icon {
+  width: 6rem;
+  height: 6rem;
+  stroke: #4ba1a7;
+}
+
+.skill-content h3 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  line-height: 170%;
+  font-weight: 700;
+}
+
+.skill-content p {
+  font-size: 1.8rem;
+  color: #828282;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 27.5rem;
+}
+
 @media (max-width: 1440px) {
   .hero-row-col .hero-num {
     font-size: 5.8rem;
@@ -161,6 +197,33 @@ nav .social-profiles ul {
 
   .hero-row-col .hero-info {
     font-size: 0.9rem;
+  }
+
+  .skill-col {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .skill-icon {
+    width: 4rem;
+    height: 4rem;
+    stroke: #4ba1a7;
+  }
+
+  .skill-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    line-height: 170%;
+    font-weight: 700;
+  }
+
+  .skill-content p {
+    font-size: 1.2rem;
+    color: #828282;
+    font-weight: 400;
+    line-height: 170%;
+    max-width: 27.5rem;
   }
 }
 
@@ -221,6 +284,12 @@ nav .social-profiles ul {
   .hero-row-col .hero-info {
     font-size: 1.6rem;
   }
+
+  .skill-col {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 632px) {
@@ -280,6 +349,31 @@ nav .social-profiles ul {
 
   .hero-row-col .hero-info {
     font-size: 2rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skill-col {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .skill-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skill-content h3 {
+    font-size: 2.2rem;
+  }
+
+  .skill-content p {
+    font-size: 1.8rem;
   }
 }
 
