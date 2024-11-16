@@ -156,6 +156,114 @@ nav .social-profiles ul {
   max-width: 27.5rem;
 }
 
+/* PERSONAL INFO STYLES */
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.personal-info .col-1 {
+  background-color: #efeaea;
+}
+
+.personal-info .col-2 {
+  background-color: #f5f8f1;
+}
+
+.personal-info .col-3 {
+  background-color: #efe8ef;
+}
+
+.personal-info-col {
+  padding: 3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.personal-info-col h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: auto;
+  color: var(--primary-color);
+}
+
+.personal-info-col .info-year {
+  font-size: 1.8rem;
+  color: #828282;
+}
+
+.personal-info-col .qualification {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 170%;
+  color: var(--primary-color);
+}
+
+.personal-info-col .additional-info {
+  font-size: 1.6rem;
+  color: #666666;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+/* REFERENCES SECTION STYLES */
+.references {
+  background-image: url(images/section-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 7rem;
+  border-radius: 2rem;
+  margin-bottom: 9rem;
+}
+
+.references .content-container {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem;
+  border-radius: 2rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 170%;
+  max-width: 57.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.reference {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.references h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.reference .years {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.reference .name {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.reference .school {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 1440px) {
   .hero-row-col .hero-num {
     font-size: 5.8rem;
@@ -163,6 +271,10 @@ nav .social-profiles ul {
 
   .hero-row-col .hero-info {
     font-size: 1.3rem;
+  }
+
+  .references .content-container {
+    max-width: 50%;
   }
 }
 
@@ -225,6 +337,10 @@ nav .social-profiles ul {
     line-height: 170%;
     max-width: 27.5rem;
   }
+
+  .personal-info p {
+    max-width: 50rem;
+  }
 }
 
 @media (max-width: 980px) {
@@ -238,6 +354,22 @@ nav .social-profiles ul {
 
   .hero-row-col .hero-info {
     font-size: 0.8rem;
+  }
+
+  .personal-info-col {
+    width: 100%;
+  }
+
+  .personal-info {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .references .content-container {
+    max-width: 100%;
+    opacity: 0.8;
   }
 }
 
@@ -375,6 +507,10 @@ nav .social-profiles ul {
   .skill-content p {
     font-size: 1.8rem;
   }
+
+  .references {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 431px) {
@@ -438,5 +574,28 @@ nav .social-profiles ul {
 
   .hero-row-col .hero-info {
     font-size: 1.2rem;
+  }
+
+  .personal-info .qualification {
+    line-height: 2.7rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .references h3 {
+    font-size: 1.5rem;
+  }
+
+  .references .content-container {
+    gap: 1.5rem;
+  }
+
+  .references .reference {
+    gap: 1.1rem;
+  }
+
+  .references .name {
+    font-size: 1.6rem;
   }
 }
