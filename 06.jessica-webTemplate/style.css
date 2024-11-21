@@ -378,6 +378,7 @@ nav .social-profiles ul {
 /* TESTIMONIALS STYLES */
 .testimonials {
   margin-top: 6rem;
+  margin-bottom: 3rem;
   padding: 3rem;
 }
 
@@ -425,6 +426,105 @@ nav .social-profiles ul {
   font-size: 1.8rem;
   line-height: auto;
   font-weight: 400;
+}
+
+.three-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 2.4rem;
+}
+
+.three-dots .dot {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.three-dots .active-dot {
+  color: #f0756c;
+}
+
+/* FAQ SECTION STYLES */
+.faq {
+  margin-bottom: 6rem;
+}
+
+.faq h2 {
+  color: var(--primary-color);
+  font-size: 6.8rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 6.8rem;
+}
+
+.faq h2 span {
+  text-transform: uppercase;
+}
+
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.faq-col-1 img {
+  width: 100%;
+}
+
+.faq-col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+.faq-col-2 .accordion {
+  background-color: #efeaea;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 2rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 2rem;
+}
+
+.faq-col-2 .active,
+.faq-col-2 .accordion:hover {
+  background-color: #efeaea;
+}
+
+.faq-row {
+  background-color: #efeaea;
+  border-radius: 2rem;
+}
+
+.faq-col-2 .panel {
+  padding: 0 2rem 2rem 2rem;
+  background-color: #efeaea;
+  display: none;
+  overflow: hidden;
+  color: #666666;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 170%;
+  border-radius: 2rem;
+}
+
+.accordion:after {
+  content: url("images/arrow-down.png"); /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: url("images/arrow-up.png"); /* Unicode character for "minus" sign (-) */
 }
 
 /* MEDIA QUERIES */
@@ -569,6 +669,17 @@ nav .social-profiles ul {
   .hero-row-col .hero-info {
     font-size: 0.6rem;
   }
+
+  .faq-content {
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .faq-col-2 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -613,7 +724,7 @@ nav .social-profiles ul {
 
   .portfolio-categories {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .testimonial-content {
