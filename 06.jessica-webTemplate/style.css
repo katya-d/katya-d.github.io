@@ -672,7 +672,135 @@ textarea {
   margin-bottom: 1.8rem;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+  height: 15.1rem;
+}
+
+.contact-form button {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 2%;
+  line-height: auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* FOOTER SECTION STYLES */
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10rem 15.5rem 0 15.5rem;
+}
+
+.footer-first-row {
+  display: flex;
+  gap: 9.8rem;
+  margin-bottom: 10rem;
+}
+
+.footer-logo {
+  font-size: 6.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.footer-p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 178%;
+  margin-bottom: 2rem;
+}
+
+.footer-col-1 .social-profiles ul {
+  display: flex;
+  list-style-type: none;
+  gap: 0.9rem;
+}
+
+.footer-col-1 .icon-class {
+  color: var(--secondary-color);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-nav {
+  list-style-type: none;
+}
+
+.footer-nav li {
+  line-height: 218%;
+  margin-bottom: 1rem;
+  letter-spacing: -0.1rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#active-footer-link,
+.footer-nav a:hover,
+.footer-nav a:focus,
+.footer-nav a:active {
+  color: #4ba1a7;
+}
+
+.info-p-row {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 178%;
+  margin-bottom: 2.2rem;
+}
+
+.footer-col-4 a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.footer-second-row {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.footer-second-row a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #4ba1a7;
+  text-decoration: none;
+}
+
 /* MEDIA QUERIES */
+
+@media (min-width: 1600px) {
+  .contact {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-first-row {
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 @media (max-width: 1440px) {
   .hero-row-col .hero-num {
@@ -685,6 +813,25 @@ textarea {
 
   .references .content-container {
     max-width: 50%;
+  }
+
+  .contact {
+    padding-left: 6.8rem;
+    padding-right: 6.8rem;
+  }
+
+  .contact-info {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .contact-form {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  footer {
+    padding: 10rem 6.8rem;
   }
 }
 
@@ -723,6 +870,15 @@ textarea {
   .news-right-col h2 {
     font-size: 2rem;
     line-height: 130%;
+  }
+
+  .footer-first-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-first-row:nth-last-of-type(2) {
+    gap: 2rem;
   }
 }
 
@@ -839,6 +995,44 @@ textarea {
   .faq-col-2 {
     width: 100%;
   }
+
+  .news-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .news-left-col img {
+    width: 100%;
+  }
+
+  .category-date {
+    font-size: 1.8rem;
+  }
+
+  .news-right-col h2 {
+    font-size: 3rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.8rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    gap: 4rem;
+  }
+
+  .contact-info {
+    margin-left: 6.8rem;
+    margin-right: 6.8rem;
+    text-align: left;
+  }
+
+  .contact-form {
+    padding-left: 6.8rem;
+    padding-right: 6.8rem;
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -890,22 +1084,6 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .news-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .news-left-col img {
-    width: 100%;
-  }
-
-  .category-date {
-    font-size: 1.8rem;
-  }
-
-  .news-right-col h2 {
-    font-size: 3rem;
-  }
 }
 
 @media (max-width: 632px) {
@@ -927,6 +1105,18 @@ textarea {
 
   .news-right-col h2 {
     font-size: 2rem;
+  }
+
+  .contact-info {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
   }
 }
 
@@ -1057,6 +1247,10 @@ textarea {
   .testimonials h2 {
     font-size: 5rem;
   }
+
+  .footer-col-4 a {
+    font-size: large;
+  }
 }
 
 @media (max-width: 431px) {
@@ -1070,6 +1264,10 @@ textarea {
 
   .hero-row-col .hero-info {
     font-size: 1.4rem;
+  }
+
+  .contact-info h2 {
+    font-size: 4.8rem;
   }
 }
 
@@ -1170,6 +1368,10 @@ textarea {
   .news-right-col h2 {
     text-align: center;
   }
+
+  .footer-col-1 .social-profiles ul {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 290px) {
@@ -1222,5 +1424,13 @@ textarea {
   .news-right-col h2 {
     font-size: 1.8rem;
     line-height: 100%;
+  }
+
+  .contact-info h2 {
+    font-size: 4rem;
+  }
+
+  .contact-info .message-info {
+    font-size: 1.6rem;
   }
 }
