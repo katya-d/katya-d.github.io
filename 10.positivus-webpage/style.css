@@ -27,6 +27,11 @@ h2 {
   height: fit-content;
 }
 
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 .container {
   width: 144rem;
   max-width: 100%;
@@ -171,6 +176,78 @@ h2 {
   max-width: 58rem;
 }
 
+/* SERVICES SECTION STYLES */
+
+.services__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.services__cards__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  border-radius: 4.5rem;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0.5rem;
+  gap: 6.9rem;
+  cursor: pointer;
+}
+
+.services__cards_card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 9.3rem;
+}
+
+.services__cards_card__content__learn-more-box {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.services__cards_card__content__learn-more-box span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.services__cards__card:nth-child(3n + 1) {
+  background-color: #f3f3f3;
+}
+
+.services__cards__card:nth-child(3n + 2) {
+  background-color: var(--secondary-color);
+}
+
+.services__cards__card:nth-child(3n + 3) {
+  background-color: #191a23;
+}
+
+.services__card__content--green {
+  background-color: #b9ff66;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.services__card__content--white {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.services__cards_card__content__learn-more-box
+  .services__cards_card__content__learn-more-box--white {
+  color: #fff;
+}
+
 /* MEDIA QUERIES STYLES */
 @media (max-width: 1200px) {
   .navigation__logo {
@@ -259,9 +336,24 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .container {
+    padding: 0 3rem;
+  }
+
   .services__header {
     flex-direction: column;
     text-align: center;
+  }
+
+  .services__cards {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .services__cards__card {
+    max-width: 100%;
+    padding: 4rem;
+    gap: 1rem;
   }
 }
 
